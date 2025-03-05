@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login in</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="log">
+
+
+        <div class="hero-2">
+            <div class="form-box-1">
+                <div class="button-box-1">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                </div>
+                <form id="login-1" class="input-group">
+                    <input type="text" class="input-feild" placeholder="User Id" required>
+                    <input type="text" class="input-feild" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">
+                    <a href="index.html"  class="logn">Login</a></button>
+                </form>
+                <form id="Register" class="input-group">
+                    <input type="text" class="input-feild" placeholder="User Id" required>
+                    <input type="email" class="input-feild" placeholder="Email " required>
+                    <input type="text" class="input-feild" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions </span>
+                    <button type="submit" class="submit-btn"><a href="index.html"  class="logn">Register</a></button>
+                </form>
+                <div class="social-icons-2">
+                    <a target="_blank" href="https://facebook.com"><img src="./login-reg-img/ffb.png"></a>
+                    <!-- <a target="_blank" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=glif"><img src="./login-reg-img/ggp.png" ></a> -->
+                    <a class="xt" target="_blank" href="https://twitter.com/"><img src="./login-reg-img/x.png"></a>
+                    <a target="_blank" href="https://web.whatsapp.com/"><img src="./login-reg-img/what.png"></a>
+    
+                    <a target="_blank" href="https://web.telegram.org/k/"><img src="./login-reg-img/tele.png"></a>
+                    <a target="_blank" href="https://instagram.com/"><img src="./login-reg-img/insta.png"></a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <script>
+            var x = document.getElementById("login-1")
+            var y = document.getElementById("Register")
+            var z = document.getElementById("btn")
+    
+            function Register() {
+                x.style.left = "-400px"
+                y.style.left = "50px"
+                z.style.left = "110px"
+            }
+            function login() {
+                x.style.left = "50px"
+                y.style.left = "450px"
+                z.style.left = "0px"
+            }
+        </script>
+    </section>
+</body>
+</html>
